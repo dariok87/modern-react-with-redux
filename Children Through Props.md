@@ -11,7 +11,7 @@ Refactor the App to use this new Segment component
     const App = () => {
         const Segment = (props) => {
   return (
-      <div className="content">{props.children}</div>
+      <div className="ui placeholder segment">{props.children}</div>
   );
 };
         return (
