@@ -17,7 +17,7 @@ The Message should show the header prop inside of the div with className header 
     const App = () => {
         return (
             <div>
-                <Message />
+                <Message header='Changes in Service' text='We just updated our privacy policy here to better service our customers' />
             </div>
         );
     }
@@ -25,8 +25,8 @@ The Message should show the header prop inside of the div with className header 
     const Message = (props) => {
         return (
             <div className="ui message">
-                <div className="header">Changes in Service</div>
-                <p>We just updated our privacy policy here to better service our customers.</p>
+                <div className="header">{props.header}</div>
+                <p>{props.text}</p>
             </div>
         );
     }
