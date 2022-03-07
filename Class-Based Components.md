@@ -18,13 +18,16 @@ Implement a render method that returns some JSX
 
 ```javascript
 <script type="text/babel" data-presets="env,react">
-    const UserForm = () => {
+
+    class UserForm extends React.Component {
+      render() {
         return (
-            <form>
-                <label>Enter a username:</label>
-                <input />
-            </form>
-        );
+          <form>
+            <label>Enter a username:</label>
+            <input />
+          </form>
+        )
+      }
     }
 
 
