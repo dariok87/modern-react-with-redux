@@ -36,8 +36,12 @@ const users = [
 
 export default class App extends React.Component {
   render() {
+    const listUsers = users.map(({id, name}) => {
+      return <li key={id}>{name}</li>;
+    });
     return (
         <ul>
+          {listUsers}
         </ul>
     );
   }
